@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sahana N Reddy</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: radial-gradient(circle at top, #7b2ff7, #4e11c9, #190e4f);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        animation: fadeBg 4s infinite alternate ease-in-out;
+    }
+
+    @keyframes fadeBg {
+        0% { background-position: left; }
+        100% { background-position: right; }
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 550px;
+        padding: 40px 35px;
+        color: white;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(15px);
+        border-radius: 18px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+        animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #f2f2f2;
+        font-size: 14px;
+    }
+
+    .input-box {
+        margin-bottom: 18px;
+        position: relative;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        width: 100%;
+        padding: 14px;
+        background: rgba(255,255,255,0.18);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .input-box input:focus,
+    .input-box textarea:focus {
+        background: rgba(255,255,255,0.28);
+        box-shadow: 0 0 10px #b47fff;
+    }
+
+    .input-box label {
+        position: absolute;
+        top: 13px;
+        left: 14px;
+        pointer-events: none;
+        font-size: 14px;
+        color: #ddd;
+        transition: 0.3s ease;
+    }
+
+    .input-box input:focus + label,
+    .input-box input:not(:placeholder-shown) + label,
+    .input-box textarea:focus + label,
+    .input-box textarea:not(:placeholder-shown) + label {
+        top: -9px;
+        left: 12px;
+        font-size: 12px;
+        background: rgba(255, 255, 255, 0.25);
+        padding: 0 6px;
+        border-radius: 4px;
+        color: #ffe5ff;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(135deg, #ff3cac, #7826ff);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 12px;
+    }
+
+    button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .contact-links {
+        margin-top: 25px;
+    }
+
+    .contact-links a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px;
+        margin: 10px 0;
+        background: rgba(255,255,255,0.25);
+        color: white;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .contact-links a:hover {
+        background: rgba(255,255,255,0.45);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        color: #ddd;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="contact-container">
+
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out using the form or links below.</p>
+
+    <form>
+        <div class="input-box">
+            <input type="text" placeholder=" " required>
+            <label>Full Name</label>
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder=" " required>
+            <label>Email Address</label>
+        </div>
+
+        <div class="input-box">
+            <textarea rows="4" placeholder=" " required></textarea>
+            <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/sneha-n-reddy-061386326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">🔗 LinkedIn Profile</a>
+        <a href="tel:+916364421619">📞 Call Me : +91 63644 21619</a>
+        <a href="mailto:snehanreddy@example.com">📧 Email Me : snehanreddy123@gmail.com</a>
+    </div>
+</div>
+
+<footer>© 2025 Sneha N Reddy | All Rights Reserved</footer>
+
+</body>
+</html>
